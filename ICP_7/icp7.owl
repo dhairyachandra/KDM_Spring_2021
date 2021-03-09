@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/dhairya/ontologies/2021/2/untitled-ontology-4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/dhairya/ontologies/2021/2/untitled-ontology-4">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Course"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cyber_Security"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Science"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KDM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Professor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Python"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Web/Mobile_Programing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFunding"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHealthInsurance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#studies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#teaches"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#course_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#course_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#full_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#student_id"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CS5560-KDM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jawad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dhairya"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Cyber_Security"/>
+        <Class IRI="#Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Science"/>
+        <Class IRI="#Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KDM"/>
+        <Class IRI="#Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Professor"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Python"/>
+        <Class IRI="#Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TA"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Web/Mobile_Programing"/>
+        <Class IRI="#Course"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#KDM"/>
+        <NamedIndividual IRI="#CS5560-KDM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Professor"/>
+        <NamedIndividual IRI="#Jawad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#dhairya"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#course_id"/>
+        <NamedIndividual IRI="#CS5560-KDM"/>
+        <Literal>CS5560</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#course_name"/>
+        <NamedIndividual IRI="#CS5560-KDM"/>
+        <Literal>Knowledge Discovery Management</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#full_name"/>
+        <NamedIndividual IRI="#Jawad"/>
+        <Literal>Shah Syed Jawad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#full_name"/>
+        <NamedIndividual IRI="#dhairya"/>
+        <Literal>Dhairya Chandra</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#student_id"/>
+        <NamedIndividual IRI="#dhairya"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1626000</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFunding"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasHealthInsurance"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#studies"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#teaches"/>
+        <Class IRI="#Professor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#teaches"/>
+        <Class IRI="#TA"/>
+    </ObjectPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#course_id"/>
+        <Class IRI="#Cyber_Security"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#course_id"/>
+        <Class IRI="#Data_Science"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#course_id"/>
+        <Class IRI="#KDM"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#course_id"/>
+        <Class IRI="#Python"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#course_id"/>
+        <Class IRI="#Web/Mobile_Programing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#course_name"/>
+        <Class IRI="#Cyber_Security"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#course_name"/>
+        <Class IRI="#Data_Science"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#course_name"/>
+        <Class IRI="#KDM"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#course_name"/>
+        <Class IRI="#Python"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#course_name"/>
+        <Class IRI="#Web/Mobile_Programing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#full_name"/>
+        <Class IRI="#Professor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#full_name"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#full_name"/>
+        <Class IRI="#TA"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#student_id"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#course_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#full_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
